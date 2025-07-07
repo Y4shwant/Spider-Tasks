@@ -1,0 +1,119 @@
+{
+    "domain": "netflix.com",
+    "scanned_at": "2025-07-07T09:01:35.921700",
+    "port_scan": {
+        "18.200.8.190": {
+            "tcp": {
+                "22": {
+                    "state": "filtered",
+                    "name": "ssh",
+                    "banner": "N/A"
+                },
+                "23": {
+                    "state": "filtered",
+                    "name": "telnet",
+                    "banner": "N/A"
+                },
+                "53": {
+                    "state": "filtered",
+                    "name": "domain",
+                    "banner": "N/A"
+                },
+                "80": {
+                    "state": "open",
+                    "name": "http",
+                    "banner": "N/A"
+                },
+                "110": {
+                    "state": "filtered",
+                    "name": "pop3",
+                    "banner": "N/A"
+                },
+                "143": {
+                    "state": "filtered",
+                    "name": "imap",
+                    "banner": "N/A"
+                },
+                "443": {
+                    "state": "open",
+                    "name": "https",
+                    "banner": "N/A"
+                },
+                "465": {
+                    "state": "filtered",
+                    "name": "smtps",
+                    "banner": "N/A"
+                },
+                "554": {
+                    "state": "filtered",
+                    "name": "rtsp",
+                    "banner": "N/A"
+                },
+                "990": {
+                    "state": "filtered",
+                    "name": "ftps",
+                    "banner": "N/A"
+                },
+                "993": {
+                    "state": "filtered",
+                    "name": "imaps",
+                    "banner": "N/A"
+                },
+                "995": {
+                    "state": "filtered",
+                    "name": "pop3s",
+                    "banner": "N/A"
+                },
+                "1433": {
+                    "state": "filtered",
+                    "name": "ms-sql-s",
+                    "banner": "N/A"
+                },
+                "3389": {
+                    "state": "filtered",
+                    "name": "ms-wbt-server",
+                    "banner": "N/A"
+                },
+                "5060": {
+                    "state": "filtered",
+                    "name": "sip",
+                    "banner": "N/A"
+                },
+                "5432": {
+                    "state": "filtered",
+                    "name": "postgresql",
+                    "banner": "N/A"
+                },
+                "8000": {
+                    "state": "filtered",
+                    "name": "http-alt",
+                    "banner": "N/A"
+                },
+                "8080": {
+                    "state": "filtered",
+                    "name": "http-proxy",
+                    "banner": "N/A"
+                },
+                "8081": {
+                    "state": "filtered",
+                    "name": "blackice-icecap",
+                    "banner": "N/A"
+                },
+                "8443": {
+                    "state": "filtered",
+                    "name": "https-alt",
+                    "banner": "N/A"
+                }
+            }
+        }
+    },
+    "technology_detection": {
+        "raw_output": "http://netflix.com [301 Moved Permanently] Cookies[nfvdid], Country[UNITED STATES][US], IP[18.200.8.190], RedirectLocation[https://netflix.com/], Strict-Transport-Security[max-age=31536000; includeSubDomains], UncommonHeaders[x-content-type-options,x-originating-url,x-netflix-cookieandmsl.profileguid.match,x-netflix-headerandcookie.profileguid.match,x-netflix-headerandmsl.profileguid.match,x-netflix.nfstatus,x-netflix.proxy.execution-time], Via-Proxy[1.1 i-095bd26dd7a8e5945 (eu-west-1)], X-XSS-Protection[1; mode=block; report=https://www.netflix.com/ichnaea/log/freeform/xssreport]\nhttps://netflix.com/ [301 Moved Permanently] Cookies[NetflixId,SecureNetflixId,nfvdid], Country[UNITED STATES][US], HTTPServer[envoy], HttpOnly[NetflixId,SecureNetflixId], IP[54.73.148.110], RedirectLocation[https://www.netflix.com/], Strict-Transport-Security[max-age=31536000; includeSubDomains], UncommonHeaders[x-envoy-upstream-service-time,x-b3-traceid,x-request-id,x-envoy-decorator-operation,x-content-type-options,x-originating-url,edge-control,x-netflix-cookieandmsl.profileguid.match,x-netflix-headerandcookie.profileguid.match,x-netflix-headerandmsl.profileguid.match,x-netflix.nfstatus,x-netflix.proxy.execution-time], Via-Proxy[1.1 i-0219d8f37cb6b0109 (eu-west-1)], X-Frame-Options[DENY], X-XSS-Protection[1; mode=block; report=https://www.netflix.com/ichnaea/log/freeform/xssreport]\nhttps://www.netflix.com/ [302 Found] Cookies[NetflixId,SecureNetflixId,flwssn,nfvdid], Country[UNITED STATES][US], HTTPServer[envoy], HttpOnly[NetflixId,SecureNetflixId], IP[44.237.234.25], RedirectLocation[https://www.netflix.com/in/], Strict-Transport-Security[max-age=31536000; includeSubDomains], UncommonHeaders[content-security-policy-report-only,accept-ch,x-robots-tag,x-envoy-upstream-service-time,x-b3-traceid,x-request-id,x-envoy-decorator-operation,x-content-type-options,x-originating-url,edge-control,x-netflix-cookieandmsl.profileguid.match,x-netflix-headerandcookie.profileguid.match,x-netflix-headerandmsl.profileguid.match,x-netflix.nfstatus,x-netflix.proxy.execution-time], Via-Proxy[1.1 i-034f3b2718b8645f5 (us-west-2)], X-Frame-Options[DENY], X-XSS-Protection[1; mode=block; report=https://www.netflix.com/ichnaea/log/freeform/xssreport]\nhttps://www.netflix.com/in/ [200 OK] Cookies[NetflixId,SecureNetflixId,flwssn,gsid,nfvdid], Country[UNITED STATES][US], Email[inexorabletash@gmail.com], HTML5, HTTPServer[envoy], HttpOnly[NetflixId,SecureNetflixId,gsid], IP[44.234.232.238], Object, Script[text/javascript,true], Strict-Transport-Security[max-age=31536000; includeSubDomains], Title[Netflix India \u2013 Watch TV Shows Online, Watch Movies Online], UncommonHeaders[content-security-policy-report-only,accept-ch,x-robots-tag,x-netflix.request.growth.session.id,x-envoy-upstream-service-time,x-b3-traceid,x-request-id,x-envoy-decorator-operation,x-content-type-options,x-originating-url,x-netflix-cookieandmsl.profileguid.match,x-netflix-headerandcookie.profileguid.match,x-netflix-headerandmsl.profileguid.match,x-netflix.nfstatus,x-netflix.proxy.execution-time,x-netflix.zuul.netty.content.compressor.target], Via-Proxy[1.1 i-02ea4379b5843ed34 (us-west-2)], X-Frame-Options[DENY], X-UA-Compatible[IE=edge], X-XSS-Protection[1; mode=block; report=https://www.netflix.com/ichnaea/log/freeform/xssreport]"
+    },
+    "email_harvesting": [
+        "No emails found"
+    ],
+    "shodan_lookup": [
+        "No Shodan results found"
+    ]
+}
